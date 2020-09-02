@@ -1,0 +1,21 @@
+version: '3.1'
+
+services:
+
+  db:
+    container_name: PostgreSQL
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: ninja
+    ports:
+      - 5432:5432
+
+  adminer:
+    container_name: Adminer
+    image: adminer
+    restart: always
+    ports:
+      - 8090:8080

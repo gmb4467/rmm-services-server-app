@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ninja
+    driverClassName: org.postgresql.Driver
+    username: admin
+    password: admin
+  jpa:
+    hibernate.ddl-auto: validate
+  flyway:
+    url: jdbc:postgresql://localhost:5432/ninja
+    username: admin
+    password: admin
